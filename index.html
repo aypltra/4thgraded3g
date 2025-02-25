@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <form method="post" action="submit" id="clubForm">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label>Student ID:
+                <input type="number" name="studentID" required>
+            </label>
+
+            <label>Full Name:
+                <input type="text" name="fullName" required>
+            </label>
+
+            <label>Birthday:
+                <input type="date" name="birthday" required>
+            </label>
+
+            <label>Email Address:
+                <input type="email" name="email" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            
+            <label>Mobile Phone:
+                <input type="text" name="mobile" required>
+            </label>
+
+            <label>Grade Level:
+                <select name="gradeLevel" required>
+                    <option value="">Select Grade Level</option>
+                    <option value="g9">Grade 9</option>
+                    <option value="g10">Grade 10</option>
+                    <option value="g11">Grade 11</option>
+                    <option value="g12">Grade 12</option>
+                </select>
+            </label>
+
+            <label>Intern / Extern:
+                <input type="radio" name="role" value="intern" required> Intern
+                <input type="radio" name="role" value="extern" required> Extern
+            </label>
+
+            <label>Preferred Organization / Club:
+                <select name="club" required>
+                    <option value="">Select a Club</option>
+                    <option value="science">Science Club</option>
+                    <option value="literary">Literary Society</option>
+                    <option value="sports">Sports Team</option>
+                    <option value="music">Music Club</option>
+                    <option value="coding">Coding Club</option>
+                </select>
+            </label>
+
+            <label>Why do you want to join?
+                <textarea name="reason" required></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        
+    </form>
+
+</body>
+</html>
